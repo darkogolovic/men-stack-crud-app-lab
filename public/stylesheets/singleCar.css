@@ -1,0 +1,27 @@
+.container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    overflow: hidden;
+    
+}
+.container p{
+    font-size: 1.5rem;
+
+}
+
+.container img{
+    width: 100%;
+    border: 4px solid wheat;
+}
+.container a{
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border: 2px solid wheat;
+    color: white;
+}

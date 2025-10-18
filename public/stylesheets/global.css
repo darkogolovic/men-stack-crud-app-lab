@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #1c1c1c, #3d3d3d, #bfa247, #f0d67a);
+  color: #f5f0e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7rem;
+}
+nav {
+  height: 10%;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid wheat;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  color: beige;
+  transform: scale(1.1);
+}

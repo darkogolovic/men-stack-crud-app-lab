@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/global.css">
+    <link rel="stylesheet" href="/stylesheets/forms.css">
+</head>
+<body>
+    <%- include('./../partials/nav.ejs') %>
+    <form action="/cars/<%= car._id %>?_method=PUT" method="POST" class="form-container">
+         <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Car name" name="name" value="<%=car.name%>">
+        </div>
+
+        <div>
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" required placeholder="Car description" value="<%=car.description%>"></textarea>
+        </div>
+        <div>
+            <label for="image" >Image:</label>
+            <input type="text" placeholder="Image url" name="image" value=" <%=car.image%>">
+        </div>
+        <button type="submit">Update car</button>
+    </form>
+</body>
+</html>

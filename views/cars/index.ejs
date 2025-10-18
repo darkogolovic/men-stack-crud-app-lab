@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/listOfCars.css">
+    <link rel="stylesheet" href="/stylesheets/global.css">
+    <title>Cars</title>
+  </head>
+  <body>
+    <%- include('./../partials/nav.ejs') %>
+    <div class="container">
+    <h1>List of cars: </h1>
+    <ul>
+      <%cars.forEach(car =>{%>
+        <div>
+      <a href="/cars/<%= car._id%>"
+        ><li><h2><%= car.name %></h2></li></a
+      >
+      <form action="/cars/<%= car._id %>?_method=DELETE" method="POST">
+        <button type="submit">❌</button>
+      </form>
+      </div>
+      <%})%>
+    </ul>
+    </div>
+  </body>
+</html>

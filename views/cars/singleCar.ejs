@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/global.css">
+    <link rel="stylesheet" href="/stylesheets/singleCar.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include('./../partials/nav.ejs') %>
+    <div class="container">
+    <h1><%= car.name %></h1>
+    <p><%= car.description %></p>
+    <%if(car.image){%>
+    <img src="<%=car.image%>" alt="<%=car.name%> image" />
+      <%}else{%>
+      <p>This car does not have picture!!!</p>
+      <%}%>
+    <a href="/cars/<%=car._id%>/edit">Edit car</a>
+    </div>
+  </body>
+</html>

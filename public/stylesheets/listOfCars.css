@@ -1,0 +1,36 @@
+.container{
+    
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    overflow: hidden;
+    
+}
+.container div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0.3rem;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+    
+}
+.container button{
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    background-color: transparent;
+}
+.container a:hover{
+    text-decoration: none;
+    color: wheat;
+}
+.container button:hover{
+    cursor: pointer;
+}
