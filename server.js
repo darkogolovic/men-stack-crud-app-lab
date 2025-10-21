@@ -4,7 +4,6 @@ dotenv.config();
 const mongoose = require("mongoose");
 const Car = require("./models/Car");
 const methodOverride = require("method-override");
-const Fruit = require("../../lectures/mvc/men-stack-crud-app-fruits/models/fruit");
 const carCtrls= require('./controllers/cars')
 
 const app = express();
